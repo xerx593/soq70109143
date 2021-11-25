@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.net.URI;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
@@ -24,6 +23,8 @@ class IntegrationTests {
                 .uri(URI.create("http://localhost:" + port + "/foo"))
                 .build();
         java.net.http.HttpResponse<String> response = client.send(request, java.net.http.HttpResponse.BodyHandlers.ofString());
+        
+        assertNotNull(response);
         assertEquals(java.net.http.HttpClient.Version.HTTP_1_1, response.version());
     }
 
@@ -33,7 +34,12 @@ class IntegrationTests {
         org.apache.http.HttpResponse response = client.execute(
                 new org.apache.http.client.methods.HttpGet("http://localhost:" + port + "/foo")
         );
+        
+        assertNotNull(response);
+        assertNotNull(response.getStatusLine());
+        
         org.apache.http.ProtocolVersion protocolV = response.getStatusLine().getProtocolVersion();
+        
         assertNotNull(protocolV);
 
         assertEquals("HTTP", protocolV.getProtocol());
