@@ -6,6 +6,10 @@ Demonstrates how to obtain & assert on the HTTP protocol version, used by spring
 1. With `java.net.http` client.
 2. With `org.apache.http` client.
 
+(Set JAVA_HOME to jdk-17):
+ 
+    export JAVA_HOME=/path/to/jdk-17/
+
 Execute Tests:
 
     mvn clean test
