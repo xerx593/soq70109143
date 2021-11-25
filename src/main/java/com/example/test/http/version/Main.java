@@ -5,8 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication
 @RestController
+@SuppressWarnings("java:S4604")
+@SpringBootApplication
 public class Main {
 
     public static void main(String[] args) {

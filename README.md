@@ -1,5 +1,5 @@
 # soq70109143
-Answer code for https://stackoverflow.com/q/70109143/592355.
+Answer code for [Spring Boot. How to test http protocol version?](https://stackoverflow.com/q/70109143/592355).
 
 Demonstrates how to obtain & assert on the HTTP protocol version, used by spring-boot:
 

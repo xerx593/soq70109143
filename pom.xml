@@ -8,11 +8,10 @@
         <version>2.6.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>demo</artifactId>
+    <groupId>com.stackoverflow</groupId>
+    <artifactId>test-http-protocol</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Answer code for [Spring Boot. How to test http protocol version?](https://stackoverflow.com/q/70109143/592355).</description>
     <properties>
         <java.version>17</java.version>
     </properties>
