@@ -10,4 +10,4 @@ Execute Tests:
 
     mvn clean test
     
-Inspect: [The tests](src/main/java/com/example/test/http/version/IntegrationTests.java).
+Inspect: [The tests](src/test/java/com/example/test/http/version/IntegrationTests.java).
